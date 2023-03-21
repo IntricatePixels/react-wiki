@@ -18,16 +18,17 @@ const Card = ({ results }) => {
                         <div className="">
                             <div className="fs-6 fw-normal">Last Location</div>
                             <div className="fs-5">{location.name}</div>
+                            {status}
                         </div>
                     </div>
                 </div>
             );
-        });
-    }
+    });
+}
     else {
-        display = "No Characters Found :/";
-    }
-    return <>{display}</>;
+    display = "No Characters Found :/";
+}
+return <>{display}</>;
 };
 
 export default Card;
